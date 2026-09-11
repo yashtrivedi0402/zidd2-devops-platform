@@ -1,15 +1,20 @@
 # --- General ---
 variable "region" {
-  type    = string
-  default = "ap-south-1"
+  type        = string
+  default     = "ap-south-1"
+  description = "AWS region where the infrastructure is deployed."
 }
+
 variable "environment" {
-  type    = string
-  default = "prod"
+  type        = string
+  default     = "prod"
+  description = "Deployment environment for the infrastructure."
 }
+
 variable "name" {
-  type    = string
-  default = "zidd2"
+  type        = string
+  default     = "zidd2"
+  description = "Base name used for project resources."
 }
 
 # --- Networking ---

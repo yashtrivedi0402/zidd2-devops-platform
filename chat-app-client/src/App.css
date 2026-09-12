@@ -385,6 +385,24 @@ button {
     0 5px 20px rgba(79, 70, 229, 0.18);
 }
 
+/* =========================
+   MESSAGE HOVER EFFECT
+   ========================= */
+
+@media (hover: hover) {
+  .cs-message--incoming .cs-message__content,
+  .cs-message--outgoing .cs-message__content {
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .cs-message--incoming .cs-message__content:hover,
+  .cs-message--outgoing .cs-message__content:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  }
+}
 
 /* =========================
    MESSAGE TEXT
